@@ -1,4 +1,5 @@
 :root {
+	background-image: url('../src/app/utils/poke-background.jpg');
 	--color-primary:  black;
   --color-background: #f0f0f7;
 	--color-electric-primary: #F8D030;

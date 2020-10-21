@@ -1,7 +1,9 @@
 <div class="topnav">
   <a class="active" href="#home">Home</a>
-  <input type="text" class="topbar-input" [(ngModel)]="pokemon.name">
-  <button (click)="btnClick()">Search Pokemon!</button>
+  <div class="topnav">
+    <input type="text" class="topbar-input" [(ngModel)]="pokemon.name">
+    <button (click)="btnClick()">Search Pokemon!</button>
+  </div>
   <a href="/about">About</a>
 </div>
 <!-- <app-poke-info></app-poke-info> -->

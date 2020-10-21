@@ -8,13 +8,15 @@ import { TopBarComponent } from './top-bar/top-bar.component';
 import { PokeInfoComponent } from './poke-info/poke-info.component';
 import { FormsModule } from '@angular/forms';
 import { AboutComponent } from './pages/about/about.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TopBarComponent,
     PokeInfoComponent,
-    AboutComponent
+    AboutComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,

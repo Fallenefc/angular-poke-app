@@ -4,16 +4,19 @@
       {{ pokes.name | uppercase }}
     </div>
   </div>
-  <div class="pokeinfotop-info">
-    <span>ID</span>
-    <span>Type</span>
-    <span *ngIf="pokes.types[1]">Type</span>
+  <div class="id-and-types-nav">
+    <div class="pokeinfotop-info">
+      <span>ID</span>
+      <span>Type</span>
+      <span *ngIf="pokes.types[1]">Type</span>
+    </div>
+    <div class="pokeinfotop">
+      <span class='infobox' id='infobox-id'>{{ pokes.id }}</span>
+      <span class='infobox' id='infobox-type1'>{{ pokes.types[0].type.name }}</span>
+      <span *ngIf="pokes.types[1]" class='infobox' id='infobox-type2'>{{ pokes.types[1].type.name }}</span>
+    </div>
   </div>
-  <div class="pokeinfotop">
-    <span class='infobox' id='infobox-id'>{{ pokes.id }}</span>
-    <span class='infobox' id='infobox-type1'>{{ pokes.types[0].type.name }}</span>
-    <span *ngIf="pokes.types[1]" class='infobox' id='infobox-type2'>{{ pokes.types[1].type.name }}</span>
-  </div>
+
   <div class="pokeinfobottom">
     <div class="status">
       <p>{{ pokes.stats[0].stat.name | uppercase }}</p>
