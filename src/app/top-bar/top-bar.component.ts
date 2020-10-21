@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Pokemon } from '../pokemon';
 
 @Component({
@@ -10,17 +11,20 @@ export class TopBarComponent implements OnInit {
 
   pokemon: Pokemon;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
     this.pokemon = {
-      id: 1,
-      name: "Pikachu"
+      name: ""
     }
   }
 
   findPoke(): void {
     console.log(this.pokemon)
+  }
+
+  btnClick(): void {
+    this.router.navigateByUrl(`/pokemon/${this.pokemon.name}`);
   }
 
 }

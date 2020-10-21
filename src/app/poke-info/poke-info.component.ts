@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, Injectable, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { PokeService } from '../services/poke.service';
 
 export class PokeInfo {
@@ -24,11 +25,20 @@ export class PokeInfoComponent implements OnInit {
   pokeId: number;
 
   constructor(
-    private pokeService: PokeService
+    private pokeService: PokeService,
+    private route: ActivatedRoute,
   ) { }
 
   ngOnInit(): void {
-    this.getPokemonInAPI('pikachu');
+    const id: string = this.route.snapshot.paramMap.get('name');
+    console.log(id)
+    this.getPokemonInAPI(id);
+  }
+
+  ngOnChange(): void {
+    const id: string = this.route.snapshot.paramMap.get('name');
+    console.log(id)
+    this.getPokemonInAPI(id);
   }
 
   getPokemonInAPI (poke) {

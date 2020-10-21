@@ -1,28 +1,74 @@
+/* Pokeinfo container has a temporary fix to center stuff, try to fix that later please or it will be an abomination */
+
 .pokeinfo-container {
+  margin-left: 250px;
+  width: 75%;
+  padding: 50px;
   display: flex;
   justify-content: center;
   flex-direction: column;
+  background-color: var(--color-psychic-primary);
+  border: 2px solid #6D5E9C;
+  border-radius: 1%;
+}
+
+.poketitle-top {
+  display: flex;
+  justify-content: center;
+  padding: 0 0 50px 0;
 }
 
 .poketitle {
   display: flex;
   justify-content: center;
-  background-color: silver;
   padding: 10px;
+  background-color: white;
+  border: 2px solid #6D5E9C;
+  width: 20%;
 }
+
+.infobox {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  background-color: white;
+  border: 2px solid #6D5E9C;
+  width: 20%;
+}
+
+#infobox-id {
+  width: 5%;
+  justify-content: center;
+}
+
+#infobox-type1, #infobox-type2 {
+  width: 15%;
+  justify-content: center;
+}
+
 
 .status {
   width: 500px;
+  border: 2px solid purple;
+  background-color: #FAE078;
+  border-radius: 10%;
+  padding: 20px
 }
 
 .picture {
   justify-content: center;
   align-items: center;
+  display: flex;
+  border: 2px solid purple;
+  background-color: #FAE078;
+  border-radius: 10%;
+  padding: 40px
 }
 
 .pokeinfobottom {
   display: flex;
   justify-content: space-around;
+  padding: 50px
 }
 
 .pokeinfotop, .pokeinfotop-info {
@@ -48,9 +94,9 @@
   color: black; /* White text color */
 }
 
-.html {width: 32%; background-color: red} /* Green */
-.css {width: 40%; background-color: orange} /* Blue */
-.js {width: 70%; background-color: yellow} /* Red */
-.php {width: 20%; background-color: blue} /* Dark Grey */
-.spDef {width: 35%; background-color: green} /* Dark Grey */
-.speed {width: 35%; background-color: pink} /* Dark Grey */
+.hp {width: 32%; background-color: red}
+.attack {width: 40%; background-color: orange}
+.defense {width: 70%; background-color: yellow}
+.spAtk {width: 20%; background-color: blue}
+.spDef {width: 35%; background-color: green}
+.speed {width: 35%; background-color: pink}
