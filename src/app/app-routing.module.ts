@@ -6,13 +6,15 @@ import { PokeInfoComponent } from './poke-info/poke-info.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
-  { path: 'dashboard', component: PokeInfoComponent },
   { path: 'about', component: AboutComponent },
   { path: 'pokemon/:name', component: PokeInfoComponent },
+  
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {
+    onSameUrlNavigation: 'reload'
+  })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

@@ -30,13 +30,13 @@ export class PokeInfoComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    const id: string = this.route.snapshot.paramMap.get('name');
+    const id: string = this.route.snapshot.paramMap.get('name').toLowerCase();;
     console.log(id)
     this.getPokemonInAPI(id);
   }
 
   ngOnChange(): void {
-    const id: string = this.route.snapshot.paramMap.get('name');
+    const id: string = this.route.snapshot.paramMap.get('name').toLowerCase();
     console.log(id)
     this.getPokemonInAPI(id);
   }

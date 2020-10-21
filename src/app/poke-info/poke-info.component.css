@@ -50,7 +50,7 @@
 .status {
   width: 500px;
   border: 2px solid purple;
-  background-color: #FAE078;
+  background-color: var(--color-psychic-secondary);
   border-radius: 10%;
   padding: 20px
 }
@@ -60,7 +60,7 @@
   align-items: center;
   display: flex;
   border: 2px solid purple;
-  background-color: #FAE078;
+  background-color: var(--color-psychic-secondary);
   border-radius: 10%;
   padding: 40px
 }
