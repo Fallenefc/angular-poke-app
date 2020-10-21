@@ -1,0 +1,56 @@
+.pokeinfo-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.poketitle {
+  display: flex;
+  justify-content: center;
+  background-color: silver;
+  padding: 10px;
+}
+
+.status {
+  width: 500px;
+}
+
+.picture {
+  justify-content: center;
+  align-items: center;
+}
+
+.pokeinfobottom {
+  display: flex;
+  justify-content: space-around;
+}
+
+.pokeinfotop, .pokeinfotop-info {
+  /* background-color: var(--color-primary); */
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Make sure that padding behaves as expected */
+* {box-sizing:border-box}
+
+/* Container for skill bars */
+.container {
+  width: 100%; /* Full width */
+  background-color: #ddd; /* Grey background */
+}
+
+.skills {
+  text-align: right; /* Right-align text */
+  padding-top: 10px; /* Add top padding */
+  padding-bottom: 10px; /* Add bottom padding */
+  color: black; /* White text color */
+}
+
+.html {width: 32%; background-color: red} /* Green */
+.css {width: 40%; background-color: orange} /* Blue */
+.js {width: 70%; background-color: yellow} /* Red */
+.php {width: 20%; background-color: blue} /* Dark Grey */
+.spDef {width: 35%; background-color: green} /* Dark Grey */
+.speed {width: 35%; background-color: pink} /* Dark Grey */
