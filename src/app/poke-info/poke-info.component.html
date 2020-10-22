@@ -1,6 +1,6 @@
-<div class="pokeinfo-container">
+<div class="pokeinfo-container" *ngIf="pokeLoaded">
   <div class="poketitle-top">
-    <div class="poketitle">
+    <div class="poketitle" *ngIf="pokes.name"> 
       {{ pokes.name | uppercase }}
     </div>
   </div>

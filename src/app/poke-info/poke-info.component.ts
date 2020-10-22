@@ -21,8 +21,9 @@ export class PokeInfo {
 @Injectable()
 export class PokeInfoComponent implements OnInit {
 
-  pokes: any;
+  pokes: PokeInfo[];
   pokeId: number;
+  pokeLoaded: boolean = false;
 
   constructor(
     private pokeService: PokeService,
@@ -42,7 +43,10 @@ export class PokeInfoComponent implements OnInit {
   }
 
   getPokemonInAPI (poke) {
-    this.pokeService.getPokes(poke).subscribe((poke) => this.pokes = poke);
+    this.pokeService.getPokes(poke).subscribe((poke) => {
+      this.pokes = poke;
+      this.pokeLoaded = true;
+    });
   }
 
 }
