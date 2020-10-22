@@ -39,14 +39,10 @@ export class PokeInfoComponent implements OnInit {
     const id: string = this.route.snapshot.paramMap.get('name').toLowerCase();
     console.log(id)
     this.getPokemonInAPI(id);
-    console.log('doggo')
   }
 
   getPokemonInAPI (poke) {
     this.pokeService.getPokes(poke).subscribe((poke) => this.pokes = poke);
-
-    // element.style.backgroundColor = color;
-    // console.log(color);
   }
 
 }

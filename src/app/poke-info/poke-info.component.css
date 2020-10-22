@@ -7,7 +7,8 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background-color: rgba(228, 227, 227, 0.863);
+  /* background-color: rgba(228, 227, 227, 0.863); */
+  background-color: var(--color-electric-background);
   /* var(--color-psychic-primary) */
   border: 2px solid #6D5E9C;
   border-radius: 1%;
@@ -18,7 +19,7 @@
   display: flex;
   justify-content: center;
   padding: 0 0 50px 0;
-  background-color: var(--color-psychic-secondary);
+  background-color: var(--color-electric-secondary);
   border-radius: 30px;
   padding: 20px;
   margin-bottom: 20px;
@@ -56,9 +57,9 @@
 
 
 .status {
-  width: 500px;
+  width: 45%;
   border: 2px solid purple;
-  background-color: var(--color-psychic-secondary);
+  background-color: var(--color-electric-secondary);
   border-radius: 30px;
   padding: 20px
 }
@@ -68,15 +69,16 @@
   align-items: center;
   display: flex;
   border: 2px solid purple;
-  background-color: var(--color-psychic-secondary);
+  background-color: var(--color-electric-secondary);
   border-radius: 30px;
-  padding: 40px
-}
+  padding: 40px;
+  width: 50%;
+} 
 
 .pokeinfobottom {
   display: flex;
-  justify-content: space-around;
-  padding: 50px
+  justify-content: space-between;
+  padding: 50px 0px;
 }
 
 .pokeinfotop, .pokeinfotop-info {
@@ -111,7 +113,7 @@
 
 .id-and-types-nav {
   border: 2px solid purple;
-  background-color: var(--color-psychic-secondary);
+  background-color: var(--color-electric-secondary);
   border-radius: 30px;
   padding: 20px;
   display: flex;

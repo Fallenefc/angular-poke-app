@@ -33,9 +33,9 @@ export class TopBarComponent implements OnInit {
     }
   }
 
-  findPoke(): void {
-    console.log(this.pokemon)
-  }
+  // findPoke(): void {
+  //   console.log(this.pokemon)
+  // }
 
   btnClick(): void {
     // this.router.navigateByUrl(`/pokemon/${this.pokemon.name}`);
