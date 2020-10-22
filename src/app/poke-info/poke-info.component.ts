@@ -42,7 +42,7 @@ export class PokeInfoComponent implements OnInit {
     this.getPokemonInAPI(id);
   }
 
-  getPokemonInAPI (poke) {
+  getPokemonInAPI (poke: string) {
     this.pokeService.getPokes(poke).subscribe((poke) => {
       this.pokes = poke;
       this.pokeLoaded = true;

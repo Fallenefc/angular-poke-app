@@ -1,6 +1,6 @@
 <div class="pokeinfo-container" *ngIf="pokeLoaded">
   <div class="poketitle-top">
-    <div class="poketitle" *ngIf="pokes.name"> 
+    <div class="poketitle" *ngIf="pokes.name">
       {{ pokes.name | uppercase }}
     </div>
   </div>
@@ -11,9 +11,15 @@
       <span *ngIf="pokes.types[1]">Type</span>
     </div>
     <div class="pokeinfotop">
-      <span class='infobox' id='infobox-id'>{{ pokes.id }}</span>
-      <span class='infobox' id='infobox-type1'>{{ pokes.types[0].type.name }}</span>
-      <span *ngIf="pokes.types[1]" class='infobox' id='infobox-type2'>{{ pokes.types[1].type.name }}</span>
+      <span class="infobox" id="infobox-id">{{
+        pokes.id
+      }}</span>
+      <span class="infobox" id="infobox-type1">{{
+        pokes.types[0].type.name
+      }}</span>
+      <span *ngIf="pokes.types[1]" class="infobox" id="infobox-type2">{{
+        pokes.types[1].type.name
+      }}</span>
     </div>
   </div>
   <div class="pokeinfobottom">
@@ -22,17 +28,17 @@
       <div class="container">
         <div class="skills hp">{{ pokes.stats[0].base_stat }}</div>
       </div>
-  
+
       <p>{{ pokes.stats[1].stat.name | uppercase }}</p>
       <div class="container">
         <div class="skills attack">{{ pokes.stats[1].base_stat }}</div>
       </div>
-  
+
       <p>{{ pokes.stats[2].stat.name | uppercase }}</p>
       <div class="container">
         <div class="skills defense">{{ pokes.stats[2].base_stat }}</div>
       </div>
-  
+
       <p>{{ pokes.stats[3].stat.name | uppercase }}</p>
       <div class="container">
         <div class="skills spAtk">{{ pokes.stats[3].base_stat }}</div>
@@ -49,10 +55,7 @@
       </div>
     </div>
     <div class="picture">
-      <img
-      [src]="pokes.sprites.other.dream_world.front_default"
-      alt=""
-    />
+      <img [src]="pokes.sprites.other.dream_world.front_default" alt="" />
     </div>
   </div>
 </div>

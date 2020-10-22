@@ -39,10 +39,10 @@ export class TopBarComponent implements OnInit {
 
   btnClick(): void {
     // this.router.navigateByUrl(`/pokemon/${this.pokemon.name}`);
-    // this.router.navigate([`/pokemon/${this.pokemon.name}`]);
-    this.router.navigateByUrl(`/pokemon/${this.pokemon.name}`, { skipLocationChange: true }).then(() => {
-      this.router.navigate([PokeInfoComponent]);
-  }); 
+    this.router.navigate([`/pokemon/${this.pokemon.name}`]);
+  //   this.router.navigateByUrl(`/pokemon/${this.pokemon.name}`, { skipLocationChange: true }).then(() => {
+  //     this.router.navigate([PokeInfoComponent]);
+  // }); 
   }
 
 }
