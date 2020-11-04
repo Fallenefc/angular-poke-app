@@ -4,3 +4,9 @@
 	justify-content: center;
 	align-content: center;
 }
+
+.dashboard-container {
+	display: flex;
+	justify-content: center;
+	min-width: 1500px;
+}

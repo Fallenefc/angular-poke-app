@@ -1,15 +1,13 @@
 /* Pokeinfo container has a temporary fix to center stuff, try to fix that later please or it will be an abomination */
 
 .pokeinfo-container {
-  margin-left: 250px;
-  width: 75%;
+  min-width: 1400px;
+  width: 100%;
   padding: 50px;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  /* background-color: rgba(228, 227, 227, 0.863); */
-  background-color: var(--color-electric-background);
-  /* var(--color-psychic-primary) */
+  background-color: rgba(228, 227, 227, 0.863);
   border: 2px solid #6D5E9C;
   border-radius: 1%;
 }
@@ -19,7 +17,7 @@
   display: flex;
   justify-content: center;
   padding: 0 0 50px 0;
-  background-color: var(--color-electric-secondary);
+  background-color: var(--color-background-secondary);
   border-radius: 30px;
   padding: 20px;
   margin-bottom: 20px;
@@ -43,6 +41,7 @@
   background-color: white;
   border: 2px solid #6D5E9C;
   width: 20%;
+  text-transform: capitalize;
 }
 
 #infobox-id {
@@ -59,7 +58,7 @@
 .status {
   width: 45%;
   border: 2px solid purple;
-  background-color: var(--color-electric-secondary);
+  background-color: var(--color-background-secondary);
   border-radius: 30px;
   padding: 20px
 }
@@ -69,7 +68,7 @@
   align-items: center;
   display: flex;
   border: 2px solid purple;
-  background-color: var(--color-electric-secondary);
+  background-color: var(--color-background-secondary);
   border-radius: 30px;
   padding: 40px;
   width: 50%;
@@ -104,18 +103,43 @@
   color: black; /* White text color */
 }
 
-.hp {width: 32%; background-color: rgb(209, 39, 39)}
-.attack {width: 40%; background-color: rgb(202, 139, 21)}
-.defense {width: 70%; background-color: rgb(170, 170, 13)}
-.spAtk {width: 20%; background-color: rgb(37, 37, 158)}
-.spDef {width: 35%; background-color: rgb(20, 119, 20)}
-.speed {width: 35%; background-color: rgb(202, 130, 142)}
+.hp {background-color: rgb(209, 39, 39)}
+.attack {background-color: rgb(202, 139, 21)}
+.defense {background-color: rgb(170, 170, 13)}
+.spAtk {background-color: rgb(56, 56, 207)}
+.spDef {background-color: rgb(27, 155, 27)}
+.speed {background-color: rgb(202, 130, 142)}
 
 .id-and-types-nav {
   border: 2px solid purple;
-  background-color: var(--color-electric-secondary);
+  background-color: var(--color-background-secondary);
   border-radius: 30px;
   padding: 20px;
   display: flex;
   flex-direction: column;
+}
+
+/* to capitalize: text-transform: capitalize */
+.poke-id, .poke-types {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.poke-id .infobox {
+  min-width: 40px;
+}
+
+.poke-types-types {
+  display: flex;
+  justify-content: space-between;
+}
+
+.poke-types-types .infobox {
+  min-width: 150px;
+}
+
+.poke-types-types .infobox:nth-of-type(2) {
+  margin-left: 30px;
 }

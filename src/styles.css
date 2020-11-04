@@ -1,11 +1,14 @@
 :root {
-	background-image: url('../src/app/utils/poke-background.jpg');
+	background-image: url('./app/utils/poke-background.jpg');
 	--color-primary:  black;
   --color-background: #f0f0f7;
-	--color-electric-primary: #F8D030;
-	--color-electric-secondary: #FAE078;
-	--color-psychic-primary: #F85888;
-	--color-psychic-secondary:#FA92B2;
+	--color-background-primary: #79ff0ade;
+	--color-background-secondary: #82e76dd8;
 	font-family: 'Roboto', sans-serif;
-	--color-electric-background: rgba(250, 250, 250, 0.829);
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+body, html {
+	margin: 0;
 }

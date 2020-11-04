@@ -1,6 +1,7 @@
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: #240090;
+  padding: 5px;
   overflow: hidden;
   display: flex;
   justify-content: space-between;
@@ -8,7 +9,6 @@
 
 /* Style the links inside the navigation bar */
 .topnav a {
-  
   float: left;
   color: white;
   text-align: center;

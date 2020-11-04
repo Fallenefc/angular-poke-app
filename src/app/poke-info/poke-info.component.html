@@ -5,53 +5,56 @@
     </div>
   </div>
   <div class="id-and-types-nav">
-    <div class="pokeinfotop-info">
-      <span>ID</span>
-      <span>Type</span>
-      <span *ngIf="pokes.types[1]">Type</span>
-    </div>
     <div class="pokeinfotop">
-      <span class="infobox" id="infobox-id">{{
-        pokes.id
-      }}</span>
-      <span class="infobox" id="infobox-type1">{{
-        pokes.types[0].type.name
-      }}</span>
-      <span *ngIf="pokes.types[1]" class="infobox" id="infobox-type2">{{
-        pokes.types[1].type.name
-      }}</span>
+      <div class='poke-id'>
+        <p>ID</p>
+        <span class="infobox" id="infobox-id">{{
+          pokes.id
+        }}</span>
+      </div>
+      <div class='poke-types'>
+        <p>Type(s)</p>
+        <div class='poke-types-types'>
+          <span class="infobox" id="infobox-type1">{{
+            pokes.types[0].type.name
+          }}</span>
+          <span *ngIf="pokes.types[1]" class="infobox" id="infobox-type2">{{
+            pokes.types[1].type.name
+          }}</span>
+        </div>
+      </div>
     </div>
   </div>
   <div class="pokeinfobottom">
     <div class="status">
       <p>{{ pokes.stats[0].stat.name | uppercase }}</p>
       <div class="container">
-        <div class="skills hp">{{ pokes.stats[0].base_stat }}</div>
+        <div class="skills hp" [ngStyle]="{'width': pokeStats.hp }">{{ pokes.stats[0].base_stat }}</div>
       </div>
 
       <p>{{ pokes.stats[1].stat.name | uppercase }}</p>
       <div class="container">
-        <div class="skills attack">{{ pokes.stats[1].base_stat }}</div>
+        <div class="skills attack" [ngStyle]="{'width': pokeStats.attack }">{{ pokes.stats[1].base_stat }}</div>
       </div>
 
       <p>{{ pokes.stats[2].stat.name | uppercase }}</p>
       <div class="container">
-        <div class="skills defense">{{ pokes.stats[2].base_stat }}</div>
+        <div class="skills defense" [ngStyle]="{'width': pokeStats.defense }">{{ pokes.stats[2].base_stat }}</div>
       </div>
 
       <p>{{ pokes.stats[3].stat.name | uppercase }}</p>
       <div class="container">
-        <div class="skills spAtk">{{ pokes.stats[3].base_stat }}</div>
+        <div class="skills spAtk" [ngStyle]="{'width': pokeStats.spAtk }">{{ pokes.stats[3].base_stat }}</div>
       </div>
 
       <p>{{ pokes.stats[4].stat.name | uppercase }}</p>
       <div class="container">
-        <div class="skills spDef">{{ pokes.stats[4].base_stat }}</div>
+        <div class="skills spDef" [ngStyle]="{'width': pokeStats.spDef }">{{ pokes.stats[4].base_stat }}</div>
       </div>
 
       <p>{{ pokes.stats[5].stat.name | uppercase }}</p>
       <div class="container">
-        <div class="skills speed">{{ pokes.stats[5].base_stat }}</div>
+        <div class="skills speed" [ngStyle]="{'width': pokeStats.speed }">{{ pokes.stats[5].base_stat }}</div>
       </div>
     </div>
     <div class="picture">
